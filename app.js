@@ -7,8 +7,8 @@ Vue.createApp({
   },
   methods: {
     add() {
-      console.log(this.added);
-      return this.goals.push(this.added);
+      this.goals.push(this.added);
+      this.added = "";
     },
   },
 }).mount("#app");
